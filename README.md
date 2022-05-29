@@ -1,6 +1,6 @@
 # PRAKTIKUM PROBSTAT MODUL2 2022 KELAS F
 
-#### Nama    : Kurnia Cahya Febryanto
+#### Nama    : Afril Muzzaqi Arif
 #### NRP     : 5025201048
 #### Kelas   : Probabilitas dan Statistik F
 
@@ -19,14 +19,14 @@ Carilah Standar Deviasi dari data selisih pasangan pengamatan tabel diatas
 
 </br>
 
-Langkah pertama penyelesaian adalah memasukkan semua data yang ada pada tabel pada sebuah variabel sebagai berikut
+Langkah pertama penyelesaian memasukkan semua data yang ada pada tabel pada sebuah variabel sebagai berikut
 ```
 before <- c(78, 75, 67, 77, 70, 72, 28, 74, 77)
 ```
 ```
 after <- c(100, 95, 70, 90, 90, 90, 89, 90, 100)
 ```
-Setelah dimasukkan semua datanya, maka dilakukan cek data menggunakan `data.frame` yaitu
+Setelah dimasukkan semua datanya, dilakukan cek data menggunakan `data.frame` yaitu
 ```
 my_data <- data.frame(
     group = rep(c("sebelum", "sesudah"), each = 9),
@@ -39,17 +39,17 @@ print(my_data)
 ```
 ![1a-1](https://user-images.githubusercontent.com/70510279/170801700-5a72cc8a-a5e8-4331-9466-534b5adba1b0.jpg)
 
-Selanjutnya mencari standar deviasinya. Standar deviasi sebelum aktivitas adalah
+Selanjutnya mencari standar deviasinya. Standar deviasi sebelum aktivitas
 ```
 SD_before <- sd(before)
 SD_before
 ```
-Maka hasilnya : 
+Lalu hasilnya : 
 </br>
 ![1a-2](https://user-images.githubusercontent.com/70510279/170802086-33f51947-7316-4eb1-a173-8b27355b2c21.jpg)
 </br>
 
-Standar deviasi setelah aktivitas adalah
+Standar deviasi setelah aktivitas
 ```
 SD_after <-sd(after)
 SD_after
@@ -77,7 +77,7 @@ tentukanlah apakah terdapat pengaruh yang signifikan secara statistika dalam hal
 
 </br>
 
-Langkah pertama yaitu melihat hasil komparasi dua variabel berikut
+Langkah pertama yaitu melihat hasil komparasi dua variabel
 ```
 var.test(before, after)
 ```
@@ -133,7 +133,7 @@ Lalu mencari nilai p-value nya sebagai berikut
 Sehingga kesimpulan yang didapat adalah bahwa mobil dikemudikan rata-rata lebih dari 20.000 kilometer per tahun
 
 ### Nomor 3
-Diketahui perusahaan memiliki seorang data analyst ingin memecahkan permasalahan pengambilan keputusan dalam perusahaan tersebut. Selanjutnya didapatkanlah data berikut dari perusahaan saham tersebut.
+Diketahui perusahaan memiliki seorang data analis ingin memecahkan permasalahan pengambilan keputusan dalam perusahaan tersebut. Selanjutnya didapatkan data berikut dari perusahaan saham tersebut.
 </br>
 ![image](https://user-images.githubusercontent.com/70510279/170834251-73d308da-69c9-4e86-b2b8-4917e598efae.png)
 Dari data diatas berilah keputusan serta kesimpulan yang didapatkan dari hasil diatas. Asumsikan nilai variancenya sama, apakah ada perbedaan pada rata-ratanya (α= 0.05)? Buatlah :
@@ -173,7 +173,7 @@ plotDist(dist='t', df=2, col="blue")
 
 #### 3d
 Nilai kritikal
-Adapun untuk mendapatkan nilai kritikal bisa menggunakan `qchisq` dengan `df=2` sesuai soal sebelumnya
+Untuk mendapatkan nilai kritikal bisa menggunakan `qchisq` dengan `df=2` sesuai soal sebelumnya
 
 ![image](https://user-images.githubusercontent.com/70510279/170846422-617fe5b8-b90c-4e5a-9533-dfec22c62ff3.png)
 
@@ -222,9 +222,9 @@ group2 <- subset(myFile, Group=="Kucing Hitam")
 group3 <- subset(myFile, Group=="Kucing Putih")
 ```
 #### 4b
-carilah atau periksalah Homogeneity of variances nya , Berapa nilai p yang didapatkan? , Apa hipotesis dan kesimpulan yang dapat diambil ?
+carilah atau periksalah Homogeneity of variances nya , Berapa nilai p yang didapat? , Apa hipotesis dan kesimpulan yang dapat diambil ?
 
-Mencari Homogeneity of variances bisa menggunakan command sebagai berikut
+Mencari Homogeneity of variances bisa menggunakan command berikut
 ```
 bartlett.test(Length~Group, data=dataoneway)
 ```
@@ -267,11 +267,11 @@ ggplot(dataoneway, aes(x = Group, y = Length)) + geom_boxplot(fill = "grey80", c
 
 
 ### Nomor 5
-Data yang digunakan merupakan hasil eksperimen yang dilakukan untuk mengetahui pengaruh suhu operasi (100˚C, 125˚C dan 150˚C) dan tiga jenis kaca pelat muka (A, B dan C) pada keluaran cahaya tabung osiloskop. Percobaan dilakukan sebanyak 27 kali dan didapat data sebagai berikut: Data Hasil Eksperimen. Dengan data tersebut:
+Data yang digunakan merupakan hasil eksperimen yang dilakukan untuk mengetahui pengaruh suhu operasi (100˚C, 125˚C dan 150˚C) dan tiga jenis kaca pelat muka (A, B dan C) pada keluaran cahaya tabung osiloskop. Percobaan dilakukan sebanyak 27 kali dan didapat data : Data Hasil Eksperimen. Dengan data tersebut:
 #### 5a
-Buatlah plot sederhana untuk visualisasi data
+Buatlah plot sederhana untuk visualisasi
 
-Run semua library yang diperlukan
+Run library yang diperlukan
 ```
 install.packages("multcompView")
 library(readr)
@@ -296,7 +296,7 @@ str(GTL)
 ![image](https://user-images.githubusercontent.com/70510279/170851373-4512e70e-81ed-4a12-bf5e-5408d4403678.png)
 </br>
 
-Selanjutnya lakukan viasualisasi menggunakan simple plot yaitu sebagai berikut
+Selanjutnya lakukan viasualisasi menggunakan simple plot yaitu
 ```
 qplot(x = Temp, y = Light, geom = "point", data = GTL) +
   facet_grid(.~Glass, labeller = label_both)
@@ -315,7 +315,7 @@ str(GTL)
 
 </br>
 
-Selanjutnya melakukan analisis of variance (aov) yaitu sebagai berikut 
+Selanjutnya melakukan analisis of variance (aov) yaitu
 ```
 anova <- aov(Light ~ Glass*Temp_Factor, data = GTL)
 summary(anova)
@@ -339,7 +339,7 @@ print(data_summary)
 #### 5d
 Lakukan uji Tukey
 
-Menggunakan fungsi `TukeyHSD` sebagai berikut
+Menggunakan fungsi `TukeyHSD` seperti berikut
 ```
 tukey <- TukeyHSD(anova)
 print(tukey)
