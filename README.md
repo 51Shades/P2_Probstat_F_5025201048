@@ -1,7 +1,7 @@
-PRAKTIKUM PROBSTAT MODUL2 2022 KELAS D
-Nama : Kurnia Cahya Febryanto
-NRP : 5025201073
-Kelas : Probabilitas dan Statistik D
+PRAKTIKUM PROBSTAT MODUL2 2022 KELAS F
+Nama : Afril Muzzaqi Arif
+NRP : 5025201048
+Kelas : Probabilitas dan Statistik F
 
 PENJELASAN
 Nomor 1
@@ -79,7 +79,7 @@ Diketahui bahwa mobil dikemudikan rata-rata lebih dari 20.000 kilometer per tahu
 2a
 Apakah Anda setuju dengan klaim tersebut?
 
-Setuju
+Saya setuju dengan klaim tersebut
 
 2b
 Jelaskan maksud dari output yang dihasilkan!
@@ -136,7 +136,7 @@ image
 3e
 Keputusan
 
-Teori keputusan adalah teori formal pengambilan keputusan di bawah ketidakpastian. Aksinya adalah : ({a}_{a∈A}) Kemungkinan konsekuensi : ({c}_{c∈C}) (tergantung pada keadaan dan tindakan) Maka keputusan dapat dibuat dengan t.test
+Teori keputusan adalah teori formal pengambilan keputusan di bawah ketidakpastian. Dan aksinya adalah : ({a}_{a∈A}) Kemungkinan konsekuensi : ({c}_{c∈C}) (tergantung keadaan dan tindakan) Maka keputusan dapat dibuat dengan t.test
 
 3f
 Kesimpulan Kesimpulan yang didapatkan yaitu perbedaan rata-rata yang terjadi tidak ada jika dilihat dari uji statistik dan akan ada tetapi tidak signifikan jika dipengaruhi nilai kritikal.
