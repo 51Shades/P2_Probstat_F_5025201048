@@ -1,8 +1,8 @@
-# PRAKTIKUM PROBSTAT MODUL2 2022 KELAS D 
+# PRAKTIKUM PROBSTAT MODUL2 2022 KELAS F
 
 #### Nama    : Kurnia Cahya Febryanto
-#### NRP     : 5025201073
-#### Kelas   : Probabilitas dan Statistik D
+#### NRP     : 5025201048
+#### Kelas   : Probabilitas dan Statistik F
 
 </br>
 
@@ -101,7 +101,7 @@ Diketahui bahwa mobil dikemudikan rata-rata lebih dari 20.000 kilometer per tahu
 #### 2a
 Apakah Anda setuju dengan klaim tersebut?
 
-*Setuju*
+*Saya setuju dengan klaimnya tersebut*
 
 #### 2b
 Jelaskan maksud dari output yang dihasilkan!
