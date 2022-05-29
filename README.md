@@ -130,7 +130,7 @@ Lalu mencari nilai p-value nya sebagai berikut
 ![image-removebg-preview (1)](https://user-images.githubusercontent.com/70510279/170823313-044b2776-38ff-49d4-bca6-455ef75db0a5.png)
 ![image-removebg-preview (2)](https://user-images.githubusercontent.com/70510279/170823338-3d86d1f2-14dc-458c-af6a-eb06f0fd8333.png)
 
-Sehingga kesimpulan yang didapat adalah bahwa mobil dikemudikan rata-rata lebih dari 20.000 kilometer per tahun
+Kesimpulan yang didapat adalah bahwa mobil dikemudikan rata-rata lebih dari 20.000 kilometer per tahun
 
 ### Nomor 3
 Diketahui perusahaan memiliki seorang data analis ingin memecahkan permasalahan pengambilan keputusan dalam perusahaan tersebut. Selanjutnya didapatkan data berikut dari perusahaan saham tersebut.
@@ -140,11 +140,11 @@ Dari data diatas berilah keputusan serta kesimpulan yang didapatkan dari hasil d
 
 #### 3a
 H0 dan H1
-dilakukan perhitungan H0 sebagai berikut
+dilakukan perhitungan H0 yaitu
 </br>
 ![image](https://user-images.githubusercontent.com/70510279/170837176-254c2846-c1b7-47c0-aa9f-c3b2e5db149a.png)
 </br>
-dilakukan perhitungan H1 sebagai berikut
+dilakukan perhitungan H1 yaitu
 </br>
 ![image](https://user-images.githubusercontent.com/70510279/170837297-542b8a9e-309b-41be-92c5-880e284beef4.png)
 
@@ -173,7 +173,7 @@ plotDist(dist='t', df=2, col="blue")
 
 #### 3d
 Nilai kritikal
-Untuk mendapatkan nilai kritikal bisa menggunakan `qchisq` dengan `df=2` sesuai soal sebelumnya
+Untuk mendapatkan nilai kritikal bisa menggunakan `qchisq` dengan `df=2` sesuai soalnya
 
 ![image](https://user-images.githubusercontent.com/70510279/170846422-617fe5b8-b90c-4e5a-9533-dfec22c62ff3.png)
 
@@ -187,7 +187,7 @@ Maka keputusan dapat dibuat dengan `t.test`
 
 #### 3f
 Kesimpulan
-Kesimpulan yang didapatkan yaitu perbedaan rata-rata yang terjadi tidak ada jika dilihat dari uji statistik dan akan ada tetapi tidak signifikan jika dipengaruhi nilai kritikal.
+Kesimpulan yang didapat yaitu perbedaan rata-rata tidak ada jika dilihat dari uji statistik dan akan ada tetapi tidak signifikan jika dipengaruhi nilai kritikal.
 
 ### Nomor 4
 Seorang Peneliti sedang meneliti spesies dari kucing di ITS . Dalam penelitiannya ia mengumpulkan data tiga spesies kucing yaitu kucing oren, kucing hitam dan kucing putih dengan panjangnya masing-masing.
@@ -196,7 +196,7 @@ H0 : Tidak ada perbedaan panjang antara ketiga spesies atau rata-rata panjangnya
 #### 4a
 Buatlah masing masing jenis spesies menjadi 3 subjek "Grup" (grup 1,grup 2,grup 3). Lalu Gambarkan plot kuantil normal untuk setiap kelompok dan lihat apakah ada outlier utama dalam homogenitas varians.
 </br>
-Langkah pertama mengambil data dari link yang telah disediadakan
+Pertama-tama mengambil data dari link yang telah disediadakan
 
 ```
 myFile  <- read.table(url("https://rstatisticsandresearch.weebly.com/uploads/1/0/2/6/1026585/onewayanova.txt")) 
@@ -210,7 +210,7 @@ myFile$Group <- as.factor(myFile$Group)
 myFile$Group = factor(myFile$Group,labels = c("Kucing Oren","Kucing Hitam","Kucing Putih"))
 ```
 
-Setelah itu, dicek apakah dia menyimpan nilai di groupnya
+Setelah itu, dicek apakah menyimpan nilai di groupnya
 ```
 class(myFile$Group)
 ```
